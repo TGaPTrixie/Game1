@@ -103,6 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointsPerUnitTravel: 1
   gameSpeed: 10
+  titleScreenName: TittleScreen
 --- !u!4 &83580958
 Transform:
   m_ObjectHideFlags: 0
