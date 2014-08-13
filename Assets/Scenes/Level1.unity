@@ -117,6 +117,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!1 &218117107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 218117109}
+  - 114: {fileID: 218117108}
+  m_Layer: 0
+  m_Name: SpecialFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &218117108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 218117107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec24c32c21955ad40aa2d9b3900f7aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cycleTime: 30
+  saturation: 1
+  brightness: 1
+--- !u!4 &218117109
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 218117107}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.2076797, y: 374.292145, z: 235.07486}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
 --- !u!1 &367601102
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,8 +172,9 @@ GameObject:
   - 23: {fileID: 367601103}
   - 114: {fileID: 367601107}
   - 114: {fileID: 367601108}
+  - 114: {fileID: 367601109}
   m_Layer: 0
-  m_Name: Quad
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -213,6 +256,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+--- !u!114 &367601109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 367601102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db9f61fa9881aeb4bb0d23b4e62e54b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cycleTime: 30
+  saturation: 1
+  brightness: 1
 --- !u!1 &370907882
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,6 +283,7 @@ GameObject:
   - 23: {fileID: 370907883}
   - 114: {fileID: 370907888}
   - 54: {fileID: 370907887}
+  - 114: {fileID: 370907889}
   m_Layer: 0
   m_Name: HiroProtagonist
   m_TagString: Player
@@ -311,6 +369,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gib: {fileID: 100000, guid: f70ce867c830c8044bfd37a76657fb0d, type: 2}
+--- !u!114 &370907889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 370907882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db9f61fa9881aeb4bb0d23b4e62e54b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cycleTime: 1
+  saturation: 1
+  brightness: 1
 --- !u!1 &612858169
 GameObject:
   m_ObjectHideFlags: 0
