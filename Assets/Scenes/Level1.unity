@@ -104,6 +104,7 @@ MonoBehaviour:
   pointsPerUnitTravel: 1
   gameSpeed: 10
   titleScreenName: TittleScreen
+  previousScore: 0
 --- !u!4 &83580958
 Transform:
   m_ObjectHideFlags: 0
