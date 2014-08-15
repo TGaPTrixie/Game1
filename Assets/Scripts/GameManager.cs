@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
 	public float pointsPerUnitTravel = 1.0f;
 	public float gameSpeed = 10.0f;
 	public string titleScreenName = "TittleScreen";
+	public string highScoreScreenName = "HighScore";
 
 	[HideInInspector]
 	public int previousScore = 0;
@@ -55,7 +56,8 @@ public class GameManager : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		if(Application.loadedLevelName != titleScreenName)
+		if (Application.loadedLevelName != titleScreenName &&
+		    Application.loadedLevelName != highScoreScreenName)
 		{
 			if (GameObject.FindGameObjectWithTag ("Player") == null) 
 			{
@@ -110,7 +112,8 @@ public class GameManager : MonoBehaviour
 
 	void OnGUI()
 	{
-		if(Application.loadedLevelName != titleScreenName)
+		if(Application.loadedLevelName != titleScreenName &&
+		   Application.loadedLevelName != highScoreScreenName)
 		{
 			int currentScore = (int)score;
 			int currentHighScore = (int)highScore;
